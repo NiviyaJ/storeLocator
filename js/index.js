@@ -100,7 +100,7 @@ function showStoresMarkers(stores) {
 
 function createMarker(latlng, name, address, phone, openStatus, index) {
     console.log(address);
-    var url = "https://www.google.com/maps/dir/?api=1&destination="+encodeURIComponent(address);
+    var url = "https://www.google.com/maps/dir/?api=1&origin=34.063380,-118.358080&destination="+encodeURIComponent(address);
     console.log(url);
     var html = `<div class="nameOpenContainer">
                     <span class="name"><b>${name}</b></span>
